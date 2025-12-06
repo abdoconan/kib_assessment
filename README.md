@@ -15,6 +15,7 @@ TMDB API.
 -   **PostgreSQL** -- Database
 -   **Docker Compose** -- Local environment
 -   **Swagger** -- API documentation
+-   **BullMQ** -- Background tasks
 -   **TMDB API** -- External movie data
 
 ------------------------------------------------------------------------
