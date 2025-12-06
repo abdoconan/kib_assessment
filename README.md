@@ -9,12 +9,12 @@ TMDB API.
 
 ## 🚀 Tech Stack
 
--   **NestJS** -- Backend framework\
--   **pnpm** -- Package manager\
--   **Drizzle ORM** -- SQL schema layer\
--   **PostgreSQL** -- Database\
--   **Docker Compose** -- Local environment\
--   **Swagger** -- API documentation\
+-   **NestJS** -- Backend framework
+-   **pnpm** -- Package manager
+-   **Drizzle ORM** -- SQL schema layer
+-   **PostgreSQL** -- Database
+-   **Docker Compose** -- Local environment
+-   **Swagger** -- API documentation
 -   **TMDB API** -- External movie data
 
 ------------------------------------------------------------------------
@@ -33,7 +33,7 @@ cd <repository-folder>
 ## 🔧 Environment Variables
 
 Before running the project, create a **`.env`** file in the root
-directory.\
+directory.
 Use the provided **`.env.example`** file as your template.
 
 Example:
@@ -70,7 +70,7 @@ docker-compose up --build
 
 Once the server is running, visit:
 
-    http://localhost:3000/docs
+    http://localhost:8080/docs
 
 ------------------------------------------------------------------------
 
