@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  api:
+    container_name: nest_api
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    # Load ALL environment variables from .env
+    env_file:
+      - .env
+
+    ports:
+      - "${PORT}:${PORT}"
+
+    depends_on:
+      - redis
+
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:${PORT}/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis_server
+    ports:
+      - "${REDIS_PORT}:${REDIS_PORT}"
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:

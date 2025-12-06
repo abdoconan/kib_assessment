@@ -1,0 +1,36 @@
+# Dependencies
+node_modules
+.pnpm-store
+.pnp
+
+# Build artifacts
+coverage
+
+# Logs
+*.log
+logs
+npm-debug.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*.local
+
+# Editor / IDE files
+.vscode
+.idea
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Docker files
+docker-compose.override.yml
+
+# Misc
+tmp
+.cache
